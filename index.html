@@ -3,46 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - UI Designer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Kafka's Cat - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold">Welcome to My Portfolio</h1>
-        </div>
+<body>
+    <header>
+        <h1>Kafka's Cat</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
-    <main class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <section class="mb-6">
-            <h2 class="text-2xl font-bold">About Me</h2>
-            <p>I'm a UI designer with a passion for creating beautiful and user-friendly interfaces.</p>
-        </section>
-        <section class="mb-6">
-            <h2 class="text-2xl font-bold">My Work</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-semibold">Project 1</h3>
-                    <p>A brief description of project 1.</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-semibold">Project 2</h3>
-                    <p>A brief description of project 2.</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-semibold">Project 3</h3>
-                    <p>A brief description of project 3.</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="text-2xl font-bold">Contact</h2>
-            <p>You can reach me at <a href="mailto:example@example.com" class="text-blue-500">example@example.com</a></p>
-        </section>
-    </main>
-    <footer class="bg-white shadow mt-6">
-        <div class="max-w-7xl mx-auto py-4 px-4 text-center">
-            <p class="text-gray-600">&copy; 2026 My Portfolio</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About</h2>
+        <p>Kafka's Cat is a visual communication designer from Shanghai.</p>
+        <p>卡夫卡的猫是来自上海的视觉传达设计师。</p>
+    </section>
+    <section id="works">
+        <h2>Works</h2>
+        <div class="work-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>Description of project.</p>
         </div>
-    </footer>
+        <div class="work-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>项目描述。</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:2954585893@qq.com">2954585893@qq.com</a></p>
+    </section>
 </body>
 </html>
